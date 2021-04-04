@@ -2,7 +2,7 @@ package com.seijinsoftware.SmartCity.utils;
 
 import com.seijinsoftware.SmartCity.exception.EnumerationException;
 
-public enum SmartCityUsers {
+public enum SmartCityUser {
 	
 	STUDENT		("Student", "S"),
 	TURIST		("Turist", "T"),
@@ -14,7 +14,7 @@ public enum SmartCityUsers {
 	private String description;
 	private String code;
 	
-	private SmartCityUsers(String description, String code) {
+	private SmartCityUser(String description, String code) {
 		this.description = description;
 		this.code = code;
 	}
@@ -36,10 +36,10 @@ public enum SmartCityUsers {
 	 * @throws EnumerationException
 	 *         the checked Exception when the code is not valid
 	 */
-	public static SmartCityUsers enumOf(String code) throws EnumerationException {
-		SmartCityUsers[] enumerationArray = values();
+	public static SmartCityUser enumOf(String code) throws EnumerationException {
+		SmartCityUser[] enumerationArray = values();
 
-		for(SmartCityUsers enumeration : enumerationArray){
+		for(SmartCityUser enumeration : enumerationArray){
 			if(enumeration.getCode().equalsIgnoreCase(code)){
 				return enumeration;
 			}
@@ -58,10 +58,10 @@ public enum SmartCityUsers {
 	 * @throws EnumerationException
 	 *         the checked Exception when the code is not valid
 	 */
-	public static SmartCityUsers enumOfByDescription(String description) throws EnumerationException {
-		SmartCityUsers[] enumerationArray = values();
+	public static SmartCityUser enumOfByDescription(String description) throws EnumerationException {
+		SmartCityUser[] enumerationArray = values();
 
-		for(SmartCityUsers enumeration : enumerationArray){
+		for(SmartCityUser enumeration : enumerationArray){
 			if(enumeration.getDescription().equalsIgnoreCase(description)){
 				return enumeration;
 			}
