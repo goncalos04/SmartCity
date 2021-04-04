@@ -8,14 +8,17 @@
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.seijinsoftware</groupId>
 	<artifactId>SmartCity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SmartCity</name>
 	<description>Smart City Website</description>
+	
 	<properties>
 		<java.version>16</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

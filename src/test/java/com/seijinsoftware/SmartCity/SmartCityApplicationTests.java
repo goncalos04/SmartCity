@@ -1,4 +1,4 @@
-package com.goncalos04.SmartCity;
+package com.seijinsoftware.SmartCity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
